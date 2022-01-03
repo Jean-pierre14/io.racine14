@@ -1,0 +1,22 @@
+{
+  "name": "io.racine14",
+  "version": "1.0.0",
+  "description": "Actions",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-pierre14/io.racine14.git"
+  },
+  "keywords": [
+    "racine14"
+  ],
+  "author": "Jean-pierre14",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jean-pierre14/io.racine14/issues"
+  },
+  "homepage": "https://github.com/Jean-pierre14/io.racine14#readme"
+}

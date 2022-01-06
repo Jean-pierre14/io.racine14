@@ -1,21 +1,18 @@
-const exp = require('express'),
+const exp = require("express"),
+  cors = require("cors"),
+  dotenv = require("dotenv").config(),
+  { success, error } = require("consola"),
+  app = exp();
 
-    cors = require('cors'),
+PORT = process.env.PORT || 7000;
 
-    {success, error} = require('consola'),
+app.use(cors());
 
-    app = exp()
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
 
-    PORT = process.env.PORT || 7000
-
-app.use(cors())
-
-app.get('/', (req, res)=>{
-    res.json('Hello')
-})
-
-
-app.listen(PORT, (e)=>{
-    if(e) error({message: `Error ${e}`, badge: true})
-    success({message: `Server run on port ${PORT}`, badge: true})
-})
+app.listen(PORT, (e) => {
+  if (e) error({ message: `Error ${e}`, badge: true });
+  success({ message: `Server run on port ${PORT}`, badge: true });
+});

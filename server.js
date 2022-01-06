@@ -1,8 +1,9 @@
 const exp = require("express"),
   cors = require("cors"),
-  dotenv = require("dotenv").config(),
   { success, error } = require("consola"),
   app = exp();
+
+require("dotenv").config();
 
 PORT = process.env.PORT || 7000;
 

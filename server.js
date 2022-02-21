@@ -14,10 +14,14 @@ con.connect((e) => {
     success({ message: `DB connected`, badge: true });
 });
 
+const title = 'Racine-14'
+
 app.use(cors());
+app.set('view engine', 'ejs')
+app.use(exp.static('public/'))
 
 app.get("/", (req, res) => {
-    res.json("Hello");
+    res.render('index', { title })
 });
 
 app.use("/users", require("./routers/"));

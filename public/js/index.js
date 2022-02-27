@@ -6,14 +6,19 @@ BtnMenu.onclick = () => {
 
     // nav.style.left = 0
     if (BtnMenu.value === 'menu') {
+
         nav.style.left = 0
 
         BtnMenu.value = 'close'
+
         BtnMenu.textContent = 'Close'
 
     } else {
+
         BtnMenu.value = 'menu'
+
         BtnMenu.textContent = 'Menu'
+
         nav.style.left = '-230px'
     }
 }

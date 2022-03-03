@@ -1,0 +1,37 @@
+*,
+*:after,
+a:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-red: red;
+  --bg-grey: #ccc;
+}
+
+body {
+  font-family: calibri;
+}
+
+section {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+section > div {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  padding: 1rem;
+  background-color: var(--bg-grey);
+}
+section > div:first-child {
+  position: inherit;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+section > div:last-child {
+  position: inherit;
+  border-radius: 0 0 0.4rem 0.4rem;
+}/*# sourceMappingURL=css.css.map */

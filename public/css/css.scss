@@ -1,0 +1,42 @@
+*,
+*:after,
+a:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-red: red;
+    --bg-grey: #ccc;
+}
+
+@mixin borderRadius {
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+body {
+    font-family: calibri;
+}
+
+section {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    >div {
+        position: relative;
+        width: 100%;
+        margin: 10px auto;
+        padding: 1rem;
+        background-color: var(--bg-grey);
+        &:first-child {
+            position: inherit;
+            border-radius: .4rem .4rem 0 0;
+        }
+        &:last-child {
+            position: inherit;
+            border-radius: 0 0 .4rem .4rem;
+        }
+    }
+}

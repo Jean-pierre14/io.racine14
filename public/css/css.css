@@ -34,4 +34,11 @@ section > div:first-child {
 section > div:last-child {
   position: inherit;
   border-radius: 0 0 0.4rem 0.4rem;
-}/*# sourceMappingURL=css.css.map */
+}
+
+#menu:checked ~ .box {
+  width: 30%;
+  margin: 0 auto;
+  background-color: red;
+}
+/*# sourceMappingURL=css.css.map */

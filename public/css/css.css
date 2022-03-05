@@ -19,6 +19,9 @@ section {
   position: relative;
   width: 70%;
   margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(to left, red, yellow, green, blue);
+  background: radial-gradient(red, green);
 }
 section > div {
   position: relative;
@@ -36,7 +39,17 @@ section > div:last-child {
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
-#menu:checked ~ .box {
+.box {
+  margin: 0 auto;
+  width: 70%;
+  transition: all ease 0.3s;
+}
+
+input[type=checkbox]:checked ~ .box {
+  background-color: red;
+}
+
+#menuBtn:checked ~ .box {
   width: 30%;
   margin: 0 auto;
   background-color: red;

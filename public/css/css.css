@@ -22,6 +22,7 @@ section {
   padding: 1rem;
   background: linear-gradient(to left, red, yellow, green, blue);
   background: radial-gradient(red, green);
+  background: radial-gradient(circle farthest-corner at left, yellow, coral);
 }
 section > div {
   position: relative;
@@ -53,5 +54,23 @@ input[type=checkbox]:checked ~ .box {
   width: 30%;
   margin: 0 auto;
   background-color: red;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .modal {
+  position: relative;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background: #fff;
+  margin: 25px auto;
 }
 /*# sourceMappingURL=css.css.map */

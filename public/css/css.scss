@@ -9,6 +9,9 @@ a:before {
 :root {
     --bg-red: red;
     --bg-grey: #ccc;
+    --bg-white: #fff;
+    --bg-dark: #111;
+    --bg-black: #000;
 }
 
 @mixin borderRadius {
